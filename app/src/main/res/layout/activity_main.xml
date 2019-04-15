@@ -7,7 +7,7 @@
               android:paddingBottom="@dimen/activity_vertical_margin"
               android:paddingLeft="@dimen/activity_horizontal_margin"
               android:paddingRight="@dimen/activity_horizontal_margin"
-              android:background="#FF9999FF"
+              android:background="#FF008080"
               android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
@@ -16,19 +16,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:textSize="20dp"
-            android:text="Open Camera"/>
+            android:text="LINIER LAYOUT"/>
     <Button
             android:id="@+id/btnPindahActivityExplisit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:textSize="20dp"
-            android:text="PROFIL"/>
+            android:text="RELATIVE LAYOUT"/>
     <Button
             android:id="@+id/btnPindahActivityIntentBundle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:textSize="20dp"
-            android:text="GALLERY FOTO"/>
+            android:text="CONSTRAINT LAYOUT"/>
 </LinearLayout>

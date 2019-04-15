@@ -1,75 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ExplisitIntentActivity">
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:orientation="vertical"
-                  android:background="#FF9999FF">
-        <android.support.v7.widget.CardView
-                android:layout_marginTop="16dp"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="5dp"
-                android:background="@color/colorAccent"
-                android:layout_gravity="center_horizontal">
-            <ImageView android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:src="@drawable/edi"/>
-        </android.support.v7.widget.CardView>
-        <LinearLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:textSize="15dp"
-                    android:layout_weight="1">
-
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="Nama Lengkap : "/>
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="NPM : "/>
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="Kelas : "/>
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="Asal : "/>
-
-            </LinearLayout>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="Edi Dwi Supratiyan"/>
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="16670099"/>
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="6B INFORMATIKA "/>
-                <TextView android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:text="Pati "/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+                android:layout_height="match_parent"
+                android:background="#FF008080" >
+    <EditText
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#f8eff8f3"
+            android:hint="Nama "
+            android:padding="16dp" />
+    <EditText
+            android:id="@+id/npm"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/name"
+            android:background="#f8eff8f3"
+            android:hint="NPM "
+            android:padding="16dp" />
+    <EditText
+            android:id="@+id/kelas"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="16dp"
+            android:background="#f8eff8f3"
+            android:hint="KELAS"
+            android:padding="16dp" />
+    <EditText
+            android:id="@+id/alamat"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/kelas"
+            android:layout_marginTop="16dp"
+            android:background="#f8eff8f3"
+            android:hint="ALAMAT"
+            android:padding="16dp" />
+    <Button
+            android:id="@+id/btn1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alamat"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:text="SIMPAN"/>
+</RelativeLayout>
