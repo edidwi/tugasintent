@@ -1,49 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="#FF008080"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF008080">
+
+        <ImageView
+                android:id="@+id/header_cover_image"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FF008080" >
-    <EditText
-            android:id="@+id/name"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="#f8eff8f3"
-            android:hint="Nama "
-            android:padding="16dp" />
-    <EditText
-            android:id="@+id/npm"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@+id/name"
-            android:background="#f8eff8f3"
-            android:hint="NPM "
-            android:padding="16dp" />
-    <EditText
-            android:id="@+id/kelas"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/name"
-            android:layout_marginTop="16dp"
-            android:background="#f8eff8f3"
-            android:hint="KELAS"
-            android:padding="16dp" />
-    <EditText
-            android:id="@+id/alamat"
-            android:layout_width="400dp"
-            android:layout_height="200dp"
-            android:layout_below="@+id/kelas"
-            android:layout_marginTop="16dp"
-            android:background="#f8eff8f3"
-            android:hint="ALAMAT"
-            android:padding="16dp" />
-    <Button
-            android:id="@+id/btn1"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/alamat"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_centerHorizontal="true"
-            android:textSize="20dp"
-            android:text="SIMPAN"/>
-</RelativeLayout>
+                android:layout_height="200dp"
+                android:src="@drawable/basket"
+                android:scaleType="centerCrop"/>
+
+        <ImageButton
+                android:id="@+id/user_profile_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-60dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/edi" />
+
+        <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="#FF008080"
+                android:elevation="4dp"
+                android:paddingBottom="24dp">
+
+            <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="76dp"
+                    android:text="HALLO GAIS"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:id="@+id/tvNama"
+                    android:text="EDI DWI SUPRATIYAN" />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:id="@+id/tvSekolahku"
+                    android:text="UNIVERSITAS PGRI SEMARANG"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:id="@+id/tvNpm"
+                    android:text="16670099" />
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:id="@+id/tvAlamat"
+                    android:text="PATI" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
